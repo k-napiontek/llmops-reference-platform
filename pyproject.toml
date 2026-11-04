@@ -1,0 +1,21 @@
+[project]
+name = "llmops-copilot"
+version = "0.1.0"
+description = "CloudOps Incident & Runbook Copilot built with Azure AI Foundry, LiteLLM, HuggingFace, and LangGraph"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain-openai>=1.7.4",
+    "langgraph>=1.2.19",
+    "python-dotenv>=1.2.4",
+    "sentence-transformers>=6.2.0",
+    "torch>=2.5.0",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu" }]
