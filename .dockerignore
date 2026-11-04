@@ -1,0 +1,8 @@
+.venv/
+.git/
+.hf_cache/
+.env
+.env.*
+infra/
+__pycache__/
+*.pyc
